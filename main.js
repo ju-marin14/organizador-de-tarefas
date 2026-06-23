@@ -1,19 +1,32 @@
 const botoes = document. querySelectorAll(".botao");
+cont textos = document.querySelectorAll("aba-conteudo");
 
 for(let i=0; i <botoes.length; i++){
     botoes[i].onclick = function(){
 
         for(let j=0; j<botoes.length; j++){
             botoes[j].classList.remove("ativo");
-
+            textos[j].classList.remove("ativo");
         }
 
         botoes[i].classlit.add("ativo");
+        textos[i].classlit.add("ativo");
+
     }
-} const contadores = document.querySelectorAll(".contador");
+}
+
+ const contadores = document.querySelectorAll(".contador");
   const tempoObjetivo1 = new Date("2024-10-05t00:00:00");
   const tempoObjetivo2 = new Date("2024-12-05t00:00:00");
   const tempoObjetivo3 = new Date("2024-12-30t00:00:00");
   const tempoObjetivo4 = new Date("2025-02-01t00:00:00");
 
-  const tempos = [tempo tempoObjetivo1,tempoObjetivo2,tempo
+  const tempos = [tempo tempoObjetivo1,tempoObjetivo2,tempoObjetivo3,tempoObjetivo4];
+
+
+  function calculaTempo(tempoObjetivo) {
+    let tempoAtual = new Date();
+    let tempoFinal = tempoObjetivo-tempoAtual;
+    let egundo = Math.floor(tempoFinal/1000);
+    let 
+  }
